@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // 用对象构造器定义的对象不能添加新属性
+    function person(name, age, gender) {
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.myFun01 = function () {
+        console.log('I am a new Object!')
+      }
+    }
+    var person = new person('Tom', 22, '男');
+    console.log(person);
+
+    // 可以通过对象原型添加新的属性
+    Object.definePrototype( person, last_name, 'Smith');
+    console.log(person);
+
+    // [注意：只改变自己对象的prototype. 内置对象的prototype能改，但千万不能忘改，除非已经对JS的了解达到一定水平]
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+    一、基本方式(键值对方式)
+    var person = {
+      name: '小明', //属性
+      gender: '男', //属性
+      birthdate: '1999-10-1', //属性
+      myfun01: function () { //方法
+        console.log(this.name) // this在对象中，指的就是这个对象（person）本身
+        console.log(this.gender)
+      }
+    }
+    【对象是一个键值对（key:value）形式的结构】
+    【person 是对象的引用】
+
+    二、用 new 关键字定义
+    var person = new Object();  // 现在相当于{},是对象的一个空盒子
+    person.name = '小明';  // 添加新的属性
+    person.gender = '男';
+    person.birthDate = '1991-10-1';
+    person.myfun01 = function(){  // 添加新的方法
+       console.log(this.name) 
+       console.log(this.gender)
+    }
+
+    三、对象构造器 [最正宗]
+    function person (name,age,gender){
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.myFun01 = function(){
+        console.log ('I am a new Object!')
+      }
+    }
+
+    // 调用
+    var person = new person ('Tom',22.'男')；
+    var person1 = new person ('Jerry',18,'男')；
+
+   -->
+</body>
+
+</html>

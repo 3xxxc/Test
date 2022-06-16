@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var person = {
+      name: '小明', //属性
+      gender: '男', //属性
+      birthdate: '1999-10-1', //属性
+      myfun01: function () { //方法
+        console.log(this.name) // this在对象中，指的就是这个对象（person）本身
+        console.log(this.gender)
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- 
+    一、函数调用
+    （1）当需要响应页面上的事件时
+    （2）当JS代码内部需要执行时
+    （3）当需要自动执行时
+   二、对象
+     （1）对象是一个被抽象的东西
+     （2）把一些特征提取出来，能够描述一个事物，这个过程叫抽象
+     （3）JS语言是一种基于对象的语言，但不是面向对象语言
+    三、基于对象与面向对象的区别
+     （1）基于对象：语言本身提供语言供程序员使用，但是程序员不能自己设计一个对象
+     （2）面向对象：程序员可以设计自己的对象，有“类”来进行设计
+    四、在ES6中添加了一个关键字 class ，但仅仅是个语法糖
+    五、面对对象三大特征：
+     （1）封装：隐藏细节，同时对外提供访问的方式；隔离细节，方便使用。 目的：提高复用性以及安全性
+     （2）继承
+     （3）多态
+    六、对象的组成
+     （1）属性（property）：可以把它当成对象中的变量
+     （2）方法（method）：可以把它当成对象中的函数
+     var person = {
+       name : '小明',   //属性
+       gender : '男',   //属性
+       birthdate : '1999-10-1',  //属性
+       myfun01 : function(){     //方法
+         console.log( this.name)      // this在对象中，指的就是这个对象（person）本身
+         console.log( this.gender)
+       }
+     }
+   -->
+</body>
+
+</html>
